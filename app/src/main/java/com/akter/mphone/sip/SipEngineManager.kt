@@ -18,7 +18,11 @@ import java.util.Date
 import java.util.Locale
 import kotlin.math.max
 
-data class AccountRegStatus(val accountId: String, val state: String, val errorDetail: String = "")
+data class AccountRegStatus(
+    val accountId: String,
+    val state: String,
+    val errorDetail: String = ""
+)
 
 data class LiveCallUiModel(
     val callerName: String,
@@ -36,7 +40,7 @@ class SipEngineManager private constructor(private val context: Context) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     private val accountMap = mutableMapOf<Account, SipAccountEntity>()
     private var currentRecordingFile: File? = null
-    private var callStartTimeMs = 0L
+    private var callStartTimeMs: Long = 0L
 
     private val _registrationStatuses = MutableStateFlow>(emptyMap())
     val registrationStatuses: StateFlow> = _registrationStatuses.asStateFlow()
