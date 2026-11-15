@@ -335,7 +335,7 @@ fun MPhoneRoot() {
                                                             .size(74.dp)
                                                             .clip(CircleShape)
                                                             .background(Color.White.copy(0.2f))
-                                                            .clickable { num += k }
+                                                            .clickable { num = "$num$k" }
                                                     ) { Text(k, color = Color.White, fontSize = 28.sp) }
                                                 }
                                             }

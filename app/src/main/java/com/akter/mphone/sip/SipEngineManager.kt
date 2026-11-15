@@ -37,7 +37,7 @@ class SipEngineManager private constructor(private val context: Context) {
     private var core: Core? = null
     private val db = MPhoneDatabase.getInstance(context)
     private val vault = CredentialVault(context)
-    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+    private val scope = CoroutineScope(SupervisorJob().plus(Dispatchers.IO))
     private val accountMap = mutableMapOf<Account, SipAccountEntity>()
     private var currentRecordingFile: File? = null
     private var callStartTimeMs: Long = 0L
@@ -141,7 +141,7 @@ class SipEngineManager private constructor(private val context: Context) {
                         rtpRttMs = rtt,
                         networkType = getNetType(),
                         codecUsed = call.currentParams?.usedAudioPayloadType?.mimeType ?: "Unknown",
-                        totalDataBytes = (((stats?.downloadBandwidth ?: 0f) + (stats?.uploadBandwidth ?: 0f)) * 125f * dur).toLong(),
+                        totalDataBytes = (((stats?.downloadBandwidth ?: 0f).plus(stats?.uploadBandwidth ?: 0f)) * 125f * dur).toLong(),
                         mosScore = mos,
                         qualityRating = rating,
                         recordingFilePath = recPath
