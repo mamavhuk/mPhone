@@ -1,0 +1,216 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.akter.mphone"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:3:5-67
+11-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:4:5-79
+12-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:4:22-76
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:5:5-71
+13-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:5:22-68
+14    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+14-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:6:5-80
+14-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:6:22-77
+15    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+15-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:7:5-76
+15-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:7:22-73
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:8:5-77
+16-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:8:22-74
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:9:5-66
+17-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:9:22-63
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:10:5-68
+18-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:10:22-65
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:11:5-77
+19-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:11:22-74
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+20-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:12:5-88
+20-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:12:22-85
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+21-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:13:5-88
+21-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:13:22-85
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+22-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:14:5-81
+22-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:14:22-78
+23    <uses-permission android:name="android.permission.READ_CONTACTS" />
+23-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:15:5-72
+23-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:15:22-69
+24
+25    <permission
+25-->[androidx.core:core:1.15.0] /home/codespace/.gradle/caches/8.9/transforms/e7b95cd61b10fcfdb9d9bb7456b4db7e/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+26        android:name="com.akter.mphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.15.0] /home/codespace/.gradle/caches/8.9/transforms/e7b95cd61b10fcfdb9d9bb7456b4db7e/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.15.0] /home/codespace/.gradle/caches/8.9/transforms/e7b95cd61b10fcfdb9d9bb7456b4db7e/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.akter.mphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Needed to be able to use WifiManager.MulticastLock -->
+29-->[androidx.core:core:1.15.0] /home/codespace/.gradle/caches/8.9/transforms/e7b95cd61b10fcfdb9d9bb7456b4db7e/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.15.0] /home/codespace/.gradle/caches/8.9/transforms/e7b95cd61b10fcfdb9d9bb7456b4db7e/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+30    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+30-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:13:5-86
+30-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:13:22-83
+31    <uses-permission android:name="android.permission.CAMERA" /> <!-- Needed to allow Linphone to install on tablets, since android.permission.CAMERA implies android.hardware.camera and android.hardware.camera.autofocus are required -->
+31-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:14:5-65
+31-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:14:22-62
+32    <uses-feature
+32-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:16:5-18:36
+33        android:name="android.hardware.camera"
+33-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:17:9-47
+34        android:required="false" /> <!-- Needed for bluetooth -->
+34-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:18:9-33
+35    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- Needed to check current do not disturb policy -->
+35-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:20:5-68
+35-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:20:22-65
+36    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- Required to be able to monitor WiFi signal strength -->
+36-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:26:5-85
+36-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:26:22-82
+37    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+37-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:28:5-76
+37-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:28:22-73
+38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+38-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:34:5-84
+38-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:34:22-81
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+39-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:37:5-87
+39-->[org.linphone:linphone-sdk-android:5.4.129] /home/codespace/.gradle/caches/8.9/transforms/cf8ef48c9fd421a089e6c99a50f63215/transformed/linphone-sdk-android-5.4.129/AndroidManifest.xml:37:22-84
+40
+41    <application
+41-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:17:5-39:19
+42        android:name="com.akter.mphone.MPhoneApplication"
+42-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:18:9-42
+43        android:allowBackup="false"
+43-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:19:9-36
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.15.0] /home/codespace/.gradle/caches/8.9/transforms/e7b95cd61b10fcfdb9d9bb7456b4db7e/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/ic_launcher"
+47-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:20:9-43
+48        android:label="@string/app_name"
+48-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:21:9-41
+49        android:roundIcon="@mipmap/ic_launcher_round"
+49-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:22:9-54
+50        android:theme="@style/Theme.MPhone"
+50-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:23:9-44
+51        android:usesCleartextTraffic="true" >
+51-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:24:9-44
+52        <activity
+52-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:25:9-34:20
+53            android:name="com.akter.mphone.MainActivity"
+53-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:26:13-41
+54            android:exported="true"
+54-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:27:13-36
+55            android:showWhenLocked="true"
+55-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:28:13-42
+56            android:turnScreenOn="true" >
+56-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:29:13-40
+57            <intent-filter>
+57-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:30:13-33:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:31:17-69
+58-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:31:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:32:17-77
+60-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:32:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <service
+64-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:35:9-38:68
+65            android:name="com.akter.mphone.service.MPhoneForegroundService"
+65-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:36:13-60
+66            android:exported="false"
+66-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:37:13-37
+67            android:foregroundServiceType="phoneCall|microphone" />
+67-->/workspaces/mPhone/app/src/main/AndroidManifest.xml:38:13-65
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+71            android:authorities="com.akter.mphone.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.3.0] /home/codespace/.gradle/caches/8.9/transforms/3af40d948fa0228143d6fec3488a273e/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/codespace/.gradle/caches/8.9/transforms/3ec6a251d83f60692815a1b468818f61/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/codespace/.gradle/caches/8.9/transforms/3ec6a251d83f60692815a1b468818f61/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/codespace/.gradle/caches/8.9/transforms/3ec6a251d83f60692815a1b468818f61/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+81                android:value="androidx.startup" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+82        </provider>
+83
+84        <service
+84-->[androidx.room:room-runtime:2.6.1] /home/codespace/.gradle/caches/8.9/transforms/47d2c5a34ed6e35628df4012eb76f4d5/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+85            android:name="androidx.room.MultiInstanceInvalidationService"
+85-->[androidx.room:room-runtime:2.6.1] /home/codespace/.gradle/caches/8.9/transforms/47d2c5a34ed6e35628df4012eb76f4d5/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+86            android:directBootAware="true"
+86-->[androidx.room:room-runtime:2.6.1] /home/codespace/.gradle/caches/8.9/transforms/47d2c5a34ed6e35628df4012eb76f4d5/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+87            android:exported="false" />
+87-->[androidx.room:room-runtime:2.6.1] /home/codespace/.gradle/caches/8.9/transforms/47d2c5a34ed6e35628df4012eb76f4d5/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+88
+89        <receiver
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+90            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+91            android:directBootAware="false"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+92            android:enabled="true"
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+93            android:exported="true"
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+94            android:permission="android.permission.DUMP" >
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+96                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+99                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+102                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+105                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/codespace/.gradle/caches/8.9/transforms/08d4f95b5f205690df2db454c7d80733/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+106            </intent-filter>
+107        </receiver>
+108    </application>
+109
+110</manifest>

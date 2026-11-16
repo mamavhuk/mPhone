@@ -1,0 +1,6 @@
+/workspaces/mPhone/app/src/main/java/com/akter/mphone/service/MPhoneForegroundService.kt
+/workspaces/mPhone/app/src/main/java/com/akter/mphone/security/CredentialVault.kt
+/workspaces/mPhone/app/src/main/java/com/akter/mphone/sip/SipEngineManager.kt
+/workspaces/mPhone/app/src/main/java/com/akter/mphone/database/EntitiesAndDb.kt
+/workspaces/mPhone/app/src/main/java/com/akter/mphone/MainActivity.kt
+/workspaces/mPhone/app/src/main/java/com/akter/mphone/MPhoneApplication.kt

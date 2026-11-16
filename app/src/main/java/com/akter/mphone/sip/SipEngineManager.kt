@@ -43,7 +43,6 @@ class SipEngineManager private constructor(private val context: Context) {
     private var callStartTimeMs: Long = 0L
 
     private val _registrationStatuses = MutableStateFlow>(emptyMap())
-    val registrationStatuses: StateFlow> = _registrationStatuses.asStateFlow()
 
     private val _incomingCallModel = MutableStateFlow<LiveCallUiModel?>(null)
     val incomingCallModel: StateFlow<LiveCallUiModel?> = _incomingCallModel.asStateFlow()
